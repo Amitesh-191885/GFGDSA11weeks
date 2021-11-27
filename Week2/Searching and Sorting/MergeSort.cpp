@@ -76,14 +76,11 @@ class Solution
             mergeSort(arr,l,mid);
             mergeSort(arr,(mid+1),r);
             merge(arr,l,mid,r);
-            
         }
     }
 };
 
 // { Driver Code Starts.
-
-
 int main()
 {
     int n,T,i;
