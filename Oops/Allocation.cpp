@@ -41,9 +41,13 @@ int main(){
 
     cout<<"Size of person->Hero: "<<sizeof(*person)<<endl; // size is 8
     // accessing properties
+    // By Dereference
     (*person).health = 49;
     (*person).setlevel('D');
     cout<<"Person health: "<<(*person).health<<"\n";
     cout<<"Person level: "<<(*person).getlevel()<<endl;
+    
+    //other way to access
+    cout<<"Person level: "<<person->getlevel()<<endl;
     return 0;
 }
