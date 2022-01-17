@@ -37,9 +37,9 @@ int main(){
 
     // Dynamic allocation
     Hero *person = new Hero;
-    cout<<"Size of person: "<<sizeof(person)<<endl;
+    cout<<"Size of person: "<<sizeof(person)<<endl; // size is 4
 
-    cout<<"Size of person->Hero: "<<sizeof(*person)<<endl;
+    cout<<"Size of person->Hero: "<<sizeof(*person)<<endl; // size is 8
     // accessing properties
     (*person).health = 49;
     (*person).setlevel('D');
