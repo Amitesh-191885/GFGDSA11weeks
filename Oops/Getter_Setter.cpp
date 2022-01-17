@@ -41,4 +41,5 @@ int main(){
     cout<<"Ramesh level: "<<ramesh.getlevel()<<endl;
     cout<<"Kajukatli health: "<<kajukatli.health<<endl;
     cout<<"Kajukatli level: "<<kajukatli.getlevel()<<endl;
+    return 0;
 }
