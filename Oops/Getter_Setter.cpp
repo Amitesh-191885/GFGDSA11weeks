@@ -25,6 +25,8 @@ int main(){
     Hero ramesh;
     Hero kajukatli;
 
+    cout<<"Size of ramesh "<<sizeof(ramesh)<<endl; // print 8 instead of 5 (4 +1)??
+    cout<<"size of kajukatli: "<<sizeof(kajukatli)<<endl;
     //access properties
     // object_name.property_name
     ramesh.health = 49;
