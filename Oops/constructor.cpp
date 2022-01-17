@@ -16,6 +16,11 @@ class Hero{
         cout<<"This is parameterised constructor."<<endl;
     }
 
+    Hero(Hero& H){
+        cout<<"This is copy constructor"<<endl;
+        this->age = H.age;
+        this->name = H.name;
+    }
     void getHero(){
         cout<<"Hero name: "<<name<<endl;
         cout<<"Hero age: "<<age<<endl;
@@ -24,21 +29,21 @@ class Hero{
 };
 
 int main(){
-    //static object creation with default constructor.
-    Hero raju;
-    raju.getHero();
-
     //static object creation with parameterised constructor.
     Hero Raju(19,"Raju");
     Raju.getHero();
 
+    //static object creation with copy constructor.
+    Hero raju(Raju);
+    raju.getHero();
+
     //Dynamic object creation with default constructor.
-    Hero *Person = new Hero;
+    Hero *Person = new Hero();
     Person->getHero();
 
     //Dynamic object creation with parametrised constructor.
 
-    Hero *rani = new Hero(18,"Rani");
+    Hero *rani = new Hero(18, "Rani");
     rani->getHero();
     return 0;
 }
