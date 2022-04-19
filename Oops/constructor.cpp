@@ -41,7 +41,7 @@ int main(){
     Hero *Person = new Hero();
     Person->getHero();
 
-    //Dynamic object creation with parametrised constructor.
+    //Dynamic object creation with parameterized constructor.
 
     Hero *rani = new Hero(18, "Rani");
     rani->getHero();

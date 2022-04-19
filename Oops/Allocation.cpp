@@ -23,7 +23,7 @@ class Hero{
 int main(){
     //object creation
     
-    // Static alocation
+    // Static allocation
     Hero ramesh;
     cout<<"Size of ramesh "<<sizeof(ramesh)<<endl; // print 8 instead of 5 (4 +1)??
     //access properties
